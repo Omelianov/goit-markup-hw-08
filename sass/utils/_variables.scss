@@ -1,0 +1,50 @@
+:root {
+  --background-color-primary: #fff;
+  --background-color-secondary: #f5f4fa;
+  --font-family: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --active-color: #188ce8;
+  --white-color: #ffffff;
+  --white-color-60: rgba(255, 255, 255, 0.6);
+  --studio-logo: #000000;
+  --background-hero-footer: #2f303a;
+  --color-social-media-links: #afb1b8;
+}
+
+// Оставил в этой папке, потому что пытался сделать из них переменные, но пока не получилось
+
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-regular.ttf) format('ttf'), url(/fonts/roboto-v30-latin_cyrillic-regular.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-500.ttf) format('ttf'), url(/fonts/roboto-v30-latin_cyrillic-500.woff) format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-700.ttf) format('ttf'), url(/fonts/roboto-v30-latin_cyrillic-700.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-900.ttf) format('ttf'), url(/fonts/roboto-v30-latin_cyrillic-900.woff) format('woff');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(/fonts/raleway-v28-latin-700.ttf) format('ttf'), url(/fonts/raleway-v28-latin-700.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+}

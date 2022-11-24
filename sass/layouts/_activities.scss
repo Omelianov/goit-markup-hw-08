@@ -1,0 +1,42 @@
+.section-activities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-activities__list {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.section-activities__title {
+  @extend %section-title;
+  color: var(--title-text-color);
+}
+
+.section-activities__item {
+  position: relative;
+}
+
+.section-activities__overlay {
+  position: absolute;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section-activities__text {
+  @extend %flex-centered;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  width: 100%;
+
+}

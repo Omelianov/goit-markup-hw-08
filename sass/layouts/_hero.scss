@@ -1,0 +1,28 @@
+.hero {
+  background-color: var(--background-hero-footer);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero__title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__main-button {
+  @extend %button;
+  @include transitions (background-color);  
+  
+&:hover,
+&:focus {
+  background-color: var(--active-color);
+}
+}

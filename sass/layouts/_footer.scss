@@ -1,0 +1,27 @@
+.footer {
+  @include section-indent (60px);
+  background-color: var(--background-hero-footer);
+}
+
+.container--footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__footer-left {
+  width: 231px;
+}
+
+.footer__footer-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer__subtitle {
+  @extend %section-subtitle;
+  display: block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+

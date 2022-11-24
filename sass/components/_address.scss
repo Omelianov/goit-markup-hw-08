@@ -1,0 +1,26 @@
+.address {
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+    &:last-child {
+    margin-bottom: 0;
+}
+}
+
+.address__tel,
+.address__mail,
+.address__location {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-decoration: none;
+}
+.address__tel,
+.address__mail {
+  color: var(--white-color-60);
+}

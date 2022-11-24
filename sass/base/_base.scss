@@ -1,0 +1,21 @@
+
+html {
+  box-sizing: border-box;
+}
+
+.body {
+  color: var(--font-family);
+  background-color: var(--background-color-primary);
+  font-family: Roboto, sans-serif;
+  
+}
+
+.list {
+list-style: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
