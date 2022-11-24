@@ -1,7 +1,11 @@
 .main-nav {
-  display: flex;
+  display: none;
   align-items: center;
   background-color: var(--background-color-primary);
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 
 .main-nav__studia-underline::after {
@@ -18,8 +22,11 @@
 }
 
 .main-nav__site-nav {
-  display: flex;
+  display: none;
   margin-left: 94px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .main-nav__site-nav .main-nav__item + .main-nav__item {
@@ -27,10 +34,17 @@
 }
 
 .auth-nav {
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-right: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
+
 .auth-nav .auth-nav__item + .auth-nav__item {
   margin-left: 50px;
 }
