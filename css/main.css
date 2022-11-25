@@ -367,11 +367,11 @@ ol {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
 }
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .features {
-    padding-top: 60px;
+    padding-top: 94px;
   }
 }
 
@@ -679,6 +679,13 @@ ol {
 .logo {
   text-decoration: none;
 }
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 15px;
+  }
+}
 
 .logo__web-part,
 .logo__studio-black-part,
@@ -686,9 +693,17 @@ ol {
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.375;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo__web-part,
+.logo__studio-black-part,
+.logo__studio-white {
+    font-size: 26px;
+    line-height: 1.375;
+  }
 }
 
 .logo__studio-black-part {
@@ -707,11 +722,21 @@ ol {
           align-items: center;
   background-color: var(--background-color-primary);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px), (max-width: 480px) {
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -722,13 +747,17 @@ ol {
 
 .main-nav__site-nav {
   display: none;
-  margin-left: 94px;
 }
 @media screen and (min-width: 768px) {
   .main-nav__site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-nav__site-nav {
+    margin-left: 94px;
   }
 }
 
@@ -738,8 +767,6 @@ ol {
 
 .auth-nav {
   display: none;
-  margin-left: auto;
-  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
@@ -750,12 +777,42 @@ ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
 .auth-nav .auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__mail {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__tel {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__tel {
+    margin-right: 30px;
+  }
 }
 
 .main-nav__site-nav,
@@ -764,11 +821,19 @@ ol {
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+}
+@media screen and (min-width: 1200px) {
+  .main-nav__site-nav,
+.main-nav__link,
+.auth-nav .auth-nav__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 
 .auth-nav__icon {
@@ -793,11 +858,23 @@ ol {
   display: -ms-flexbox;
   display: flex;
   color: var(--font-family);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .auth-nav .auth-nav__link {
+    padding: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav .auth-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .main-nav__link,
