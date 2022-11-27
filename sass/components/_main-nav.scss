@@ -1,9 +1,10 @@
 .main-nav {
-  display: none;
+  display: flex;
+  justify-content:space-between;
   align-items: center;
   background-color: var(--background-color-primary);
 
-  @media screen and (min-width: 480px), (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: flex;
   }
 
