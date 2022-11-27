@@ -6,7 +6,7 @@
 }
 
 // section indent mixin
-@mixin section-indent($pt: 94px, $pb: $pt) {
+@mixin section-indent($pt: 60px, $pb: $pt) {
   padding-top: $pt;
   padding-bottom: $pb;
 }
