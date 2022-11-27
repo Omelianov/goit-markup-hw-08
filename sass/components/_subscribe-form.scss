@@ -1,5 +1,5 @@
 .subscribe {
-  margin-left: 92px;
+  // margin-left: 92px;
   align-items: center;
 }
 
@@ -8,10 +8,13 @@
   display: block;
   color: var(--white-color);
   margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .subscribe__form {
-  display: flex;
+  @extend %flex-centered;
+  flex-direction: column;
     &input::placeholder {
     color: var(--white-color-60);
 }
@@ -20,7 +23,7 @@
 .subscribe__email {
   @include transitions (box-shadow, border-color);
   display: inline-block;
-  width: 358px;
+  width: 450px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -45,7 +48,7 @@
   margin-left: 12px;
   border-color: transparent;
   letter-spacing: 0.03em;
-  margin-top: 0;
+  margin-top: 20px;
     &:focus,
     &:hover {
   outline: none;
