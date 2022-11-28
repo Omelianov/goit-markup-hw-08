@@ -204,7 +204,7 @@ summary {
   border-radius: 60px;
 }
 
-.subscribe__footer-btn, .subscribe__form, .socials__link, .contact-form__button, .modal__form, .modal__close-btn, .menu-toggle__close-button, .mobile-menu__open, .container--footer, .footer, .section-clients__link, .section-activities__text, .features__icon-container {
+.subscribe__footer-btn, .subscribe__form, .socials__link, .contact-form__button, .modal__form, .modal__close-btn, .menu-toggle__close-button, .mobile-menu__open, .footer, .section-clients__link, .section-activities__text, .features__icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,6 +672,9 @@ ol {
 }
 
 .container--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -679,6 +682,13 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .container--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -697,16 +707,17 @@ ol {
     -webkit-box-align: top;
         -ms-flex-align: top;
             align-items: top;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 .footer__footer-left {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__footer-left {
-    margin-right: auto;
-    margin-left: auto;
+    width: 231px;
   }
 }
 
@@ -719,6 +730,12 @@ ol {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .footer__footer-right {
+    margin-left: 70px;
+  }
+}
+
 .footer__subtitle {
   text-align: center;
   color: var(--white-color);
@@ -730,6 +747,12 @@ ol {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__subtitle {
+    margin-bottom: 20px;
+  }
+}
+
 .section-sort-buttons {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1528,6 +1551,11 @@ ol {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 92px;
+  }
+}
 
 .subscribe__subtitle {
   display: block;
@@ -1535,6 +1563,11 @@ ol {
   margin-bottom: 20px;
   margin-top: 60px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__subtitle {
+    text-align: left;
+  }
 }
 
 .subscribe__form {
@@ -1558,6 +1591,14 @@ ol {
 .subscribe__forminput::placeholder {
   color: var(--white-color-60);
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .subscribe__email {
   -webkit-transition-property: border-color, -webkit-box-shadow;
@@ -1580,9 +1621,14 @@ ol {
 }
 .subscribe__email:focus, .subscribe__email:hover {
   outline: none;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 358px;
+  }
 }
 
 .subscribe__footer-btn {
@@ -1595,7 +1641,7 @@ ol {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background: #2196f3;
+  background: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: 12px;
@@ -1605,9 +1651,14 @@ ol {
 }
 .subscribe__footer-btn:focus, .subscribe__footer-btn:hover {
   outline: none;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__footer-btn {
+    margin-top: 0;
+  }
 }
 
 .subscribe__icon {
