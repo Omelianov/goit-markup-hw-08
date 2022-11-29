@@ -7,8 +7,6 @@
 .container--footer {
   display: flex;
   flex-direction: column;
-  
-
   @media screen and (min-width: 768px) {
     // justify-content: space-between;
   }
@@ -26,16 +24,13 @@
     flex-direction: row;
     align-items: top;
     justify-content: space-around;
-  
   }
 }
 
 .footer__footer-left {
   text-align: center;
-  
 
   @media screen and (min-width: 768px) {
-    
   }
   @media screen and (min-width: 1200px) {
     width: 231px;
@@ -45,10 +40,8 @@
 .footer__footer-right {
   display: flex;
   flex-direction: column;
-  
 
   @media screen and (min-width: 768px) {
-    
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
@@ -56,8 +49,8 @@
 }
 
 .footer__subtitle {
-  @extend %footer-nav-font-stile;
-  // @extend %flex-centered;
+  @extend %section-subtitle-mobile;
+  
   text-align: center;
   color: var(--white-color);
   margin-top: 60px;
@@ -71,4 +64,6 @@
   margin-bottom: 20px;
 }
 }
+
+
 

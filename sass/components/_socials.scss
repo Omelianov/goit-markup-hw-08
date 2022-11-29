@@ -1,7 +1,7 @@
 .socials {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   gap: 10px;
 }
 
@@ -30,13 +30,20 @@
   height: 20px;
 }
 
-
-// Socials in footer
-
 .socials--link-footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .socials__icon--footer {
   fill: var(--white-color);
+}
+
+.socials--mb24 {
+  margin-bottom: 24px;
+  
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
+  
 }

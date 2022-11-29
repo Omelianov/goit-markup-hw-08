@@ -2,45 +2,82 @@
   @include section-indent(60px);  
   background-color: var(--background-color-secondary);
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 }
 
 .section-team__title {
-  @extend %section-title;  
+  @extend %section-title-mobile; 
   color: var(--title-text-color);
-  
+
+  @media screen and (min-width: 1200px) {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+  }
 }
 
 .section-team__list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+  
+   @media screen and (min-width: 768px) {
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
 }
 
 .section-team__member {
+  width: 450px;
+  margin-top: var(--card-set-gap);
   background-color: var(--background-color-primary);
-  width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
 }
 
 .section-team__employee-name {
+  @extend %team-employee-name;
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
   margin: 30px auto 10px auto;
 }
 
 .section-team__duty {
+  @extend %team-employee-name;
   color: var(--font-family);
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
   vertical-align: middle;
   margin-bottom: 16px;
 }
+
+
+
+

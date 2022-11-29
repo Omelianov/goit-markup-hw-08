@@ -22,13 +22,18 @@
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+}
 }
 
 .modal__close-btn {
@@ -52,18 +57,29 @@
 }
 
 .modal__form {
-   @extend %flex-centered;
   position: absolute;
   display: block;
-  width: 448px;
+  width: 370px;
+
+    @media screen and (min-width: 1200px) {
+    width: 448px;
+}
 }
 
 .modal__text {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   letter-spacing: 0.03em;
   color: #212121;
+  margin-right: auto;
+  margin-left: auto;
+  
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+    
+}
 }
 
 
@@ -171,21 +187,32 @@
 }
 
 .contact-form__accept-text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--font-family);
   margin-left: 7px;
   user-select: none;
+
+
+   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
 }
 
 .contact-form__link {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--active-color);
   margin-left: 7px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
 }
 
 .contact-form__name + .modal__close-icon:hover {

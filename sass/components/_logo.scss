@@ -10,7 +10,7 @@
 
 .logo__web-part,
 .logo__studio-black-part,
-.logo__studio-white {
+.logo__studio-white-part {
   @extend %logo-setup-mobile;
 
   @media screen and (min-width: 1200px) {
@@ -26,6 +26,6 @@
 
 /* Logo in footer */
 
-.logo__studio-white {
+.logo__studio-white-part {
   color: var(--white-color);
 }

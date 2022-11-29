@@ -3,7 +3,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
 }}
 
 .features__icon-container {
@@ -32,12 +32,7 @@
 }
 
 .features__list .features__item {
-  // width: 270px;
-  width: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
+  max-width: 450px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
