@@ -90,10 +90,7 @@
 .auth-nav .auth-nav__link {
   color: var(--title-text-color);
   font-family: inherit;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.02em;
+  @include fonts($fs: 12px, $lh: 14px, $ls: 0.02em, $fw: 500);
   text-decoration-line: none;
 
   @media screen and (min-width: 1200px) {

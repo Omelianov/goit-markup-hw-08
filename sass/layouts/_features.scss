@@ -65,7 +65,5 @@
 
 .features__text {
   color: var(--font-family);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include fonts($fs: 14px, $lh: 24px, $ls: 0.03em);
 }

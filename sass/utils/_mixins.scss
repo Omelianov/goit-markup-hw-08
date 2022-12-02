@@ -11,6 +11,12 @@
   padding-bottom: $pb;
 }
 
+@mixin fonts($fs: 14px, $lh: 24px, $ls: 0.03em, $fw: 400) {
+	font-size: $fs;
+	line-height: calc($lh/$fs);
+	letter-spacing: $ls;
+	font-weight: $fw;
+}
 
 
 

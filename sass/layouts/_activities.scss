@@ -36,10 +36,7 @@
 
 .section-activities__text {
   @extend %flex-centered;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fonts($fs: 14px, $lh: 16px, $ls: 0.03em, $fw: 700);
   text-transform: uppercase;
   color: var(--white-color);
   width: 100%;

@@ -11,16 +11,13 @@
 }
 
 .section-sort-buttons__item {
-  @include transitions (background-color, color, box-shadow);  
+  @include transitions (background-color, color, box-shadow);
+  @include fonts($fs: 16px, $lh: 26px, $ls: 0.03em, $fw: 500);  
   padding: 6px 22px;  
   width: auto;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
   background-color: var(--background-color-secondary);
     &:hover,
     &:focus {
