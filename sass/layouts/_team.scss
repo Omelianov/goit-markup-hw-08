@@ -39,7 +39,8 @@
 }
 
 .section-team__member {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   margin-top: var(--card-set-gap);
   background-color: var(--background-color-primary);
   border-radius: 0px 0px 4px 4px;

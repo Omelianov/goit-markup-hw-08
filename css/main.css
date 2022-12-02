@@ -620,7 +620,8 @@ ol {
 }
 
 .section-team__member {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   margin-top: var(--card-set-gap);
   background-color: var(--background-color-primary);
   border-radius: 0px 0px 4px 4px;
@@ -830,16 +831,30 @@ ol {
   padding-bottom: 60px;
 }
 
+.section-sort-buttons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 326px;
+}
+
 .section-sort-buttons__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 326px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-bottom: 50px;
   color: var(--font-family);
   gap: 8px;
+  -ms-flex-preferred-size: calc(20% - 8px);
+      flex-basis: calc(20% - 8px);
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .section-sort-buttons__item {

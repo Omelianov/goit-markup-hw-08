@@ -2,12 +2,24 @@
   @include section-indent;
 }
 
+.section-sort-buttons__container {
+  display: flex;
+ 
+  width: 326px;
+
+}
+
 .section-sort-buttons__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 326px;
+  justify-content: left;
   margin-bottom: 50px;
   color: var(--font-family);
   gap: 8px;
+  flex-basis: calc(100% / 5 - 8px);
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .section-sort-buttons__item {
@@ -28,3 +40,10 @@
 
 }
 
+
+// @media screen and (min-width: 768px) {
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//   width: 358px;
+// }
