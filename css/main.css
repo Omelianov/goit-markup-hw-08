@@ -218,6 +218,7 @@ summary {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .subscribe__subtitle, .features__subtitle {
@@ -844,6 +845,10 @@ ol {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 326px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -854,7 +859,6 @@ ol {
   -ms-flex-preferred-size: calc(20% - 8px);
       flex-basis: calc(20% - 8px);
   margin-left: 8px;
-  margin-top: 15px;
 }
 
 .section-sort-buttons__item {
