@@ -23,15 +23,15 @@
           >
           <ul class="main-nav__site-nav list">
             <li class="main-nav__item">
-              <a
-                href="./index.html"
-                target="_self"
-                class="main-nav__studia-underline main-nav__link current"
-                >Студія</a
-              >
+              <a href="./index.html" target="_self" class="main-nav__link">Студія</a>
             </li>
             <li class="main-nav__item">
-              <a href="./portfolio.html" target="_self" class="main-nav__link">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                target="_self"
+                class="main-nav__studia-underline main-nav__link current"
+                >Портфоліо</a
+              >
             </li>
             <li class="main-nav__item">
               <a href="#" target="_self" class="main-nav__link">Контакти</a>
@@ -102,7 +102,7 @@
                     class="img"
                     src="./images/portfolio/img_port_1.jpg"
                     alt="технокряк изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -125,7 +125,7 @@
                     class="img"
                     src="./images/portfolio/img_port_2.jpg"
                     alt="постер new orlean vs golden star изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -148,7 +148,7 @@
                     class="img"
                     src="./images/portfolio/img_port_3.jpg"
                     alt="ресторан seafood изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -171,7 +171,7 @@
                     class="img"
                     src="./images/portfolio/img_port_4.jpg"
                     alt="проєкт prime изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -194,7 +194,7 @@
                     class="img"
                     src="./images/portfolio/img_port_5.jpg"
                     alt="проєкт boxes изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -217,7 +217,7 @@
                     class="img"
                     src="./images/portfolio/img_port_6.jpg"
                     alt="inspiration has no borders изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -240,7 +240,7 @@
                     class="img"
                     src="./images/portfolio/img_port_7.jpg"
                     alt="видання limited edition изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -263,7 +263,7 @@
                     class="img"
                     src="./images/portfolio/img_port_8.jpg"
                     alt="проєкт LAB изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -286,7 +286,7 @@
                     class="img"
                     src="./images/portfolio/img_port_9.jpg"
                     alt="growing business изображение"
-                    width="370"
+                    width="450"
                     height="294"
                 /></a>
               </div>
@@ -379,105 +379,71 @@
           </form>
         </div>
       </div>
-
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal__close-btn" data-modal-close>
-            <svg class="modal__close-icon" width="18" height="18">
-              <use href="./images/icons.svg#close-black"></use>
-            </svg>
-          </button>
-
-          <!-- Форма -->
-
-          <div class="modal__form">
-            <strong class="modal__text">Залиште свої дані, ми вам передзвонимо</strong>
-            <form class="contact-form" name="contacts-form">
-              <label for="name" class="contact-form__field">
-                <span class="contact-form__label">Ім'я</span>
-                <span class="contact-form__box">
-                  <input
-                    class="contact-form__name"
-                    type="text"
-                    name="name"
-                    id="name"
-                    autofocus
-                    required
-                    minlength="2"
-                    maxlength="28"
-                  />
-                  <svg class="contact-form__icon" width="18" height="18">
-                    <use href="./images/icons.svg#person-black"></use>
-                  </svg>
-                </span>
-              </label>
-              <label for="phone_number" class="contact-form__field">
-                <span class="contact-form__label">Телефон</span>
-                <span class="contact-form__box">
-                  <input
-                    class="contact-form__phone"
-                    type="tel"
-                    name="phone_number"
-                    id="phone_number"
-                    required
-                    minlength="9"
-                    maxlength="14"
-                  />
-                  <svg class="contact-form__icon" width="18" height="18">
-                    <use href="./images/icons.svg#phone-black"></use>
-                  </svg>
-                </span>
-              </label>
-              <label for="mail" class="contact-form__field">
-                <span class="contact-form__label">Пошта</span>
-                <span class="contact-form__box">
-                  <input
-                    class="contact-form__email"
-                    type="email"
-                    name="email"
-                    id="mail"
-                    required
-                    minlength="2"
-                    maxlength="35"
-                  />
-                  <svg class="contact-form__icon" width="18" height="18">
-                    <use href="./images/icons.svg#email-black"></use>
-                  </svg>
-                </span>
-              </label>
-              <label for="comments" class="contact-form__field">
-                <span class="contact-form__label">Коментар</span>
-                <textarea
-                  class="contact-form__comments"
-                  name="comments"
-                  id="comments"
-                  rows="20"
-                  placeholder="Введіть текст"
-                ></textarea>
-              </label>
-              <label class="contact-form__accept" for="accept">
-                <input
-                  class="contact-form__checkbox visually-hidden"
-                  type="checkbox"
-                  id="accept"
-                  required
-                  checked="unchecked"
-                />
-                <svg class="contact-form__icon-checkbox" width="18" height="18">
-                  <use
-                    class="contact-form__icon-unaccept"
-                    href="./images/icons.svg#square-vector"
-                  ></use>
-                  <use class="contact-form__icon-accept" href="./images/icons.svg#icon-check"></use>
-                </svg>
-                <span class="contact-form__accept-text">Погоджуюся з розсилкою та приймаю</span>
-                <a class="contact-form__link" href="#"> Умови договору</a>
-              </label>
-              <button class="contact-form__button" type="submit">Відправити</button>
-            </form>
-          </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="menu-toggle">
+        <button class="menu-toggle__close-button js-close-menu">
+          <svg class="menu-toggle__icon" width="19" height="19">
+            <use href="./images/icons.svg#menu-toggle-close-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu-nav">
+        <ul class="mobile-menu-nav__list">
+          <li class="mobile-menu-nav__item">
+            <a href="./index.html" target="_self" class="mobile-menu-nav__link">Студія</a>
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a href="./portfolio.html" target="_self" class="mobile-menu-nav__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a href="#" target="_self" class="mobile-menu-nav__link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu-bottom">
+        <div class="mobile-menu-auth">
+          <ul class="mobile-menu-auth__list">
+            <li class="mobile-menu-auth__tel-item">
+              <a href="tel:+380961111111" target="_self" class="mobile-menu-auth__tel-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-auth__mail-item">
+              <a href="mailto:info@devstudio.com" target="_self" class="mobile-menu-auth__mail-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-socials">
+          <ul class="mobile-menu-socials__list">
+            <li class="mobile-menu-socials__item" aria-label="инстаграмм">
+              <a href="https://www.instagram.com/" class="mobile-menu-socials__link">Instagram</a>
+            </li>
+            <div class="mobile-menu-socials__splitter"></div>
+            <li class="mobile-menu-socials__item" aria-label="твиттер">
+              <a href="https://twitter.com/" class="mobile-menu-socials__link">Twitter</a>
+            </li>
+            <div class="mobile-menu-socials__splitter"></div>
+            <li class="mobile-menu-socials__item" aria-label="фэйсбук">
+              <a href="https://www.facebook.com/" class="mobile-menu-socials__link">Facebook</a>
+            </li>
+            <div class="mobile-menu-socials__splitter"></div>
+            <li class="mobile-menu-socials__item" aria-label="линкедин">
+              <a href="https://www.linkedin.com/" class="mobile-menu-socials__link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -11,8 +11,8 @@
 
 .card-set__item {
   @include transitions (box-shadow);
-  width: 370px;
-  height: 404px;
+  max-width: 450px;
+  width: 100%;
   display: block;
   flex-basis: calc(100% / 9 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
@@ -23,6 +23,12 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+    @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
 }
 
 
@@ -35,15 +41,23 @@
 .project-card__title {
   color: var(--title-text-color);
   @include fonts($fs: 18px, $lh: 36px, $ls: 0.06em, $fw: 700);
+
+  @media screen and (min-width: 768px) {
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 .project-card__card-text {
   color: var(--font-family);
   @include fonts($fs: 16px, $lh: 30px, $ls: 0.03em);
-  width: 322px;
-  height: 30px;
+  
   margin-left: 0;
   margin-top: 4px;
+
+
 }
 
 .card-set__item:hover .project-card__overlay {
@@ -53,6 +67,16 @@
 .project-card {
   position: relative;
   overflow: hidden;
+  width: 450px;
+
+   @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+}
+  
 }
 
 .project-card__overlay {
@@ -77,9 +101,3 @@
 
 
 
-// @media screen and (min-width: 768px) {
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//   width: 358px;
-// }
