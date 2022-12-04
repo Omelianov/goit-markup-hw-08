@@ -20,7 +20,7 @@
 }
 
 %button {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -36,7 +36,7 @@
 }
 
 %section-title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -47,7 +47,7 @@
 }
 
 %section-title-mobile {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: calc(33 / 28);
@@ -59,7 +59,7 @@
 
 
 %section-subtitle {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -68,7 +68,7 @@
 }
 
 %section-subtitle-mobile {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -78,7 +78,7 @@
 }
 
 %menu-toggle-font-styles {
-font-family: "Roboto";
+font-family: "Roboto", sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 40px;
@@ -89,7 +89,7 @@ color: var(--title-text-color);
 
 
 %logo-setup-mobile {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -99,7 +99,7 @@ color: var(--title-text-color);
 }
 
 %team-employee-name{
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
