@@ -6,8 +6,9 @@ html {
 .body {
   color: var(--font-family);
   background-color: var(--background-color-primary);
-  font-family: Roboto, sans-serif;
-  
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .list {

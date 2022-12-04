@@ -187,10 +187,10 @@ summary {
 }
 
 .subscribe__footer-btn, .contact-form__button, .hero__main-button {
-  color: var(--white-color);
-  background-color: var(--accent-color);
   font-family: "Roboto";
   font-weight: 700;
+  color: var(--white-color);
+  background-color: var(--accent-color);
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -203,6 +203,8 @@ summary {
 }
 
 .section-activities__title, .features__title {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
@@ -212,6 +214,7 @@ summary {
 }
 
 .section-clients__title, .section-team__title {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 28px;
   line-height: 1.1785714286;
@@ -222,6 +225,7 @@ summary {
 }
 
 .subscribe__subtitle, .features__subtitle {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -230,13 +234,16 @@ summary {
 }
 
 .footer__subtitle {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .mobile-menu-socials__link, .mobile-menu-auth__mail-link, .mobile-menu-auth__tel-link, .mobile-menu-nav__link {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -248,6 +255,7 @@ summary {
 .logo__web-part,
 .logo__studio-black-part,
 .logo__studio-white-part {
+  font-family: "Roboto";
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -257,6 +265,7 @@ summary {
 }
 
 .section-team__duty, .section-team__employee-name {
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
@@ -278,32 +287,32 @@ summary {
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(/fonts/roboto-v30-latin_cyrillic-regular.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-regular.woff) format("woff");
+  font-family: "Roboto";
+  src: url(./fonts/roboto-v30-latin_cyrillic-regular.ttf) format("ttf") url(./fonts/roboto-v30-latin_cyrillic-regular.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: Roboto;
-  src: url(/fonts/roboto-v30-latin_cyrillic-500.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-500.woff) format("woff");
+  font-family: "Roboto";
+  src: url(../fonts/roboto-v30-latin_cyrillic-500.ttf) format("ttf") url(../fonts/roboto-v30-latin_cyrillic-500.woff) format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: Roboto;
-  src: url(/fonts/roboto-v30-latin_cyrillic-700.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-700.woff) format("woff");
+  font-family: "Roboto";
+  src: url(../fonts/roboto-v30-latin_cyrillic-700.ttf) format("ttf") url(../fonts/roboto-v30-latin_cyrillic-700.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: Roboto;
-  src: url(/fonts/roboto-v30-latin_cyrillic-900.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-900.woff) format("woff");
+  font-family: "Roboto";
+  src: url(./fonts/roboto-v30-latin_cyrillic-900.ttf) format("ttf") url(./fonts/roboto-v30-latin_cyrillic-900.woff) format("woff");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
-  font-family: Raleway;
-  src: url(/fonts/raleway-v28-latin-700.ttf) format("ttf"), url(/fonts/raleway-v28-latin-700.woff) format("woff");
+  font-family: "Raleway";
+  src: url(../fonts/raleway-v28-latin-700.ttf) format("ttf"), url(../fonts/raleway-v28-latin-700.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -315,7 +324,9 @@ html {
 .body {
   color: var(--font-family);
   background-color: var(--background-color-primary);
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .list {
@@ -388,6 +399,7 @@ ol {
 }
 
 .hero__title {
+  font-family: "Roboto";
   color: var(--white-color);
   font-size: 26px;
   line-height: 1.6153846154;
@@ -404,7 +416,7 @@ ol {
     font-size: 44px;
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
-    font-weight: 400;
+    font-weight: 900;
     max-width: 696px;
     width: 100%;
   }
@@ -1068,6 +1080,11 @@ ol {
   }
 }
 
+.logo__web-part,
+.logo__studio-black-part,
+.logo__studio-white-part {
+  font-family: "Raleway";
+}
 @media screen and (min-width: 1200px) {
   .logo__web-part,
 .logo__studio-black-part,
@@ -1838,11 +1855,11 @@ ol {
 .address__tel,
 .address__mail,
 .address__location {
-  color: var(--white-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--white-color);
   font-style: normal;
   text-decoration: none;
 }

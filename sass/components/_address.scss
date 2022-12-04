@@ -12,11 +12,8 @@
 .address__tel,
 .address__mail,
 .address__location {
+  @include fonts($fs: 14px, $lh: 16px, $ls: 0.02em, $fw: 500);
   color: var(--white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
   font-style: normal;
   text-decoration: none;
 }

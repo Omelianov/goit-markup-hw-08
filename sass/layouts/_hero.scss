@@ -6,6 +6,7 @@
 }
 
 .hero__title {
+  font-family: "Roboto";
   color: var(--white-color);
   @include fonts($fs: 26px, $lh: 42px, $ls: 0.06em, $fw: 900);
   text-transform: uppercase;
@@ -15,7 +16,7 @@
   margin-right: auto;
 
   @media screen and (min-width: 1200px) {
-    @include fonts($fs: 44px, $lh: 60px, $ls: 0.06em);
+    @include fonts($fs: 44px, $lh: 60px, $ls: 0.06em, $fw: 900);
     max-width: 696px;
     width: 100%;
   }
