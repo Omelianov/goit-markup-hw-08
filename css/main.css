@@ -187,7 +187,6 @@ summary {
 }
 
 .subscribe__footer-btn, .contact-form__button, .hero__main-button {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -203,7 +202,6 @@ summary {
 }
 
 .section-activities__title, .features__title {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -214,18 +212,15 @@ summary {
 }
 
 .section-clients__title, .section-team__title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.1785714286;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   text-align: center;
-  text-transform: uppercase;
 }
 
-.subscribe__subtitle, .features__subtitle {
-  font-family: "Roboto", sans-serif;
+.subscribe__subtitle, .footer__subtitle, .features__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -233,17 +228,7 @@ summary {
   text-transform: uppercase;
 }
 
-.footer__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .mobile-menu-socials__link, .mobile-menu-auth__mail-link, .mobile-menu-auth__tel-link, .mobile-menu-nav__link {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -255,7 +240,6 @@ summary {
 .logo__web-part,
 .logo__studio-black-part,
 .logo__studio-white-part {
-  font-family: "Roboto", sans-serif;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -265,7 +249,6 @@ summary {
 }
 
 .section-team__duty, .section-team__employee-name {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
@@ -286,35 +269,45 @@ summary {
   margin: -1px;
 }
 
+/* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url(./fonts/roboto-v30-latin_cyrillic-regular.ttf) format("ttf") url(./fonts/roboto-v30-latin_cyrillic-regular.woff) format("woff");
   font-style: normal;
   font-weight: 400;
+  src: url("../fonts/roboto-v30-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-regular.svg") format("svg"); /* Legacy iOS */
 }
+/* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/roboto-v30-latin_cyrillic-500.ttf) format("ttf") url(../fonts/roboto-v30-latin_cyrillic-500.woff) format("woff");
   font-style: normal;
   font-weight: 500;
+  src: url("../fonts/roboto-v30-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-500.svg") format("svg"); /* Legacy iOS */
 }
+/* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/roboto-v30-latin_cyrillic-700.ttf) format("ttf") url(../fonts/roboto-v30-latin_cyrillic-700.woff) format("woff");
   font-style: normal;
   font-weight: 700;
+  src: url("../fonts/roboto-v30-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-700.svg") format("svg"); /* Legacy iOS */
 }
+/* roboto-900 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url(./fonts/roboto-v30-latin_cyrillic-900.ttf) format("ttf") url(./fonts/roboto-v30-latin_cyrillic-900.woff) format("woff");
   font-style: normal;
   font-weight: 900;
+  src: url("../fonts/roboto-v30-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg") format("svg"); /* Legacy iOS */
 }
+/* raleway-700 - latin_cyrillic */
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/raleway-v28-latin-700.ttf) format("ttf"), url(../fonts/raleway-v28-latin-700.woff) format("woff");
   font-style: normal;
   font-weight: 700;
+  src: url("../../fonts/raleway-v28-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway-v28-latin_cyrillic-700.eot") format("embedded-opentype"), url("../fonts/raleway-v28-latin_cyrillic-700.woff2") format("woff2"), url("../../fonts/raleway-v28-latin_cyrillic-700.woff") format("woff"), url("../../fonts/raleway-v28-latin_cyrillic-700.ttf") format("truetype"), url("../../fonts/raleway-v28-latin_cyrillic-regular.svg") format("svg"); /* Legacy iOS */
 }
 html {
   -webkit-box-sizing: border-box;
@@ -325,7 +318,6 @@ html {
   color: var(--font-family);
   background-color: var(--background-color-primary);
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 400;
 }
 
@@ -393,13 +385,18 @@ ol {
 
 .hero {
   background-color: var(--background-hero-footer);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  font-family: "Roboto";
   color: var(--white-color);
   font-size: 26px;
   line-height: 1.6153846154;
@@ -617,7 +614,9 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+}
+.section-team__list:first-child {
+  margin-top: 0;
 }
 @media screen and (min-width: 768px) {
   .section-team__list {
@@ -679,6 +678,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .section-clients {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -815,17 +815,23 @@ ol {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 65px;
+}
+@media screen and (min-width: 768px) {
+  .footer__footer-right {
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__footer-right {
     margin-left: 70px;
+    margin-top: 10px;
   }
 }
 
 .footer__subtitle {
   text-align: center;
   color: var(--white-color);
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -833,12 +839,6 @@ ol {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__subtitle {
-    margin-bottom: 20px;
-  }
-}
-
 .section-sort-buttons {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1115,18 +1115,8 @@ ol {
           align-items: center;
   background-color: var(--background-color-primary);
 }
-@media screen and (min-width: 480px) {
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 @media screen and (min-width: 768px) {
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1196,6 +1186,11 @@ ol {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav__mail {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .auth-nav__tel {
@@ -1204,7 +1199,7 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__tel {
-    margin-right: 30px;
+    margin-right: 0;
   }
 }
 
@@ -1262,8 +1257,8 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav .auth-nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 33px;
+    padding-bottom: 33px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1724,6 +1719,7 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
@@ -1735,7 +1731,6 @@ ol {
   display: block;
   color: var(--white-color);
   margin-bottom: 20px;
-  margin-top: 60px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -1871,7 +1866,6 @@ ol {
 
 .hero__overlay {
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;

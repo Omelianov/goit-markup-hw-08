@@ -25,7 +25,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+
+  &:first-child {
+    margin-top: 0;
+  }
   
    @media screen and (min-width: 768px) {
     margin-top: calc(-1 * var(--card-set-gap));
@@ -37,6 +40,7 @@
     margin-left: calc(-1 * var(--card-set-gap));
   }
 }
+
 
 .section-team__member {
   max-width: 450px;

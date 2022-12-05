@@ -35,18 +35,22 @@
 .footer__footer-right {
   display: flex;
   flex-direction: column;
+  margin-top: 65px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
+    margin-top: 10px;
   }
 }
 
 .footer__subtitle {
-  @extend %section-subtitle-mobile;
-  
+  @extend %section-subtitle;
   text-align: center;
   color: var(--white-color);
-  margin-top: 60px;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
@@ -54,7 +58,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-  margin-bottom: 20px;
+
 }
 }
 

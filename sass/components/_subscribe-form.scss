@@ -1,7 +1,10 @@
 .subscribe {
   align-items: center;
+  margin-top: 60px;
+
   @media screen and (min-width: 1200px) {
   margin-left: 92px;
+
 }
 }
 
@@ -10,7 +13,6 @@
   display: block;
   color: var(--white-color);
   margin-bottom: 20px;
-  margin-top: 60px;
   text-align: center;
 
    @media screen and (min-width: 1200px) {
