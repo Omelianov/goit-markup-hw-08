@@ -1023,6 +1023,7 @@ ol {
 
 .mobile-menu-auth__mail-item {
   margin-bottom: 64px;
+  width: 100%;
 }
 
 .mobile-menu-auth__tel-link {
@@ -1041,19 +1042,31 @@ ol {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 }
 .mobile-menu-auth__mail-link:focus {
   color: var(--accent-color);
+}
+
+.mobile-menu-socials {
+  width: 100%;
+  padding: 5px;
 }
 
 .mobile-menu-socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu-socials__item {
-  margin-right: 10px;
+  margin-right: 9px;
+}
+
+.mobile-menu-socials__item:last-child {
+  margin-right: 0;
 }
 
 .mobile-menu-socials__link {
@@ -1066,7 +1079,7 @@ ol {
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .logo {
