@@ -30,3 +30,9 @@
 .logo__studio-white-part {
   color: var(--white-color);
 }
+
+.logo--footer {
+  @media screen and (min-width: 1200px) {
+  margin-left: 0;
+  }
+}

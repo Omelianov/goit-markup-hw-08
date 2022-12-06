@@ -2,6 +2,7 @@
   @include section-indent (60px);
   @extend %flex-centered;
   background-color: var(--background-hero-footer);
+  
 }
 
 .container--footer {
@@ -12,6 +13,9 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: space-between;
+  
+  
 }
 }
 
@@ -20,7 +24,12 @@
     display: flex;
     flex-direction: row;
     align-items: top;
-    justify-content: space-around;
+    justify-content: space-between;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
   }
 }
 
@@ -28,7 +37,8 @@
   text-align: center;
 
   @media screen and (min-width: 1200px) {
-    width: 231px;
+    text-align: left;
+    margin-right: 92px;
   }
 }
 
@@ -42,7 +52,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
     margin-top: 10px;
   }
 }
@@ -58,7 +67,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-
+  text-align: left;
 }
 }
 
